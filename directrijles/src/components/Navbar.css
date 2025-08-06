@@ -1,0 +1,56 @@
+.Navbar a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #525252;
+    font-weight: bold;
+}
+.Navbar a:hover{
+    color: #000;
+}
+.Navbar { 
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 100%;
+    width: 20%;
+    gap: 15px;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px; height: 100%;
+    width: 60%;
+    gap: 15px;
+    
+}
+.box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px; height: 100%;
+    width: 20%;
+}
+.reserve-button{
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.car-logo{
+    width: 100px;
+    height: 100px;
+}
