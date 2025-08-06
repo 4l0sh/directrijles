@@ -1,6 +1,6 @@
 .contact-page {
     min-height: 100vh;
-    background-color: #f8f9fa;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -14,26 +14,32 @@
 .hero-section {
     text-align: center;
     padding: 60px 0;
-    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-    color: white;
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 50%, #e2e8f0 100%);
+    color: #0f172a;
     margin-bottom: 60px;
-    border-radius: 0 0 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 10px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.9);
 }
 
 .hero-section h1 {
     font-size: 3.5em;
     margin: 0 0 20px 0;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-weight: 900;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    letter-spacing: -0.03em;
 }
 
 .hero-subtitle {
     font-size: 1.3em;
     margin: 0;
-    opacity: 0.9;
+    opacity: 0.8;
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
+    color: #334155;
+    font-weight: 500;
 }
 
 /* Contact Sections */
@@ -58,16 +64,16 @@
 }
 
 .contact-section h2 {
-    color: #333;
+    color: #0f172a;
     font-size: 2.2em;
     margin: 0 0 25px 0;
-    font-weight: bold;
-    border-bottom: 3px solid #2196F3;
+    font-weight: 700;
+    border-bottom: 3px solid #f59e0b;
     padding-bottom: 15px;
 }
 
 .contact-section p {
-    color: #666;
+    color: #334155;
     font-size: 1.1em;
     line-height: 1.8;
     margin: 0 0 20px 0;
@@ -98,8 +104,8 @@
 }
 
 .form-group label {
-    color: #333;
-    font-weight: bold;
+    color: #0f172a;
+    font-weight: 600;
     font-size: 1em;
 }
 
@@ -107,42 +113,45 @@
 .form-group select,
 .form-group textarea {
     padding: 15px;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
     font-size: 1em;
     font-family: inherit;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fafafa;
+    background-color: #f8fafc;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #2196F3;
-    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+    border-color: #f59e0b;
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
     background-color: white;
 }
 
 .submit-button {
-    background-color: #2196F3;
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
     color: white;
     border: none;
     padding: 18px 40px;
-    border-radius: 8px;
+    border-radius: 12px;
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: inherit;
     align-self: center;
     min-width: 200px;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .submit-button:hover {
-    background-color: #1976D2;
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(33, 150, 243, 0.4);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.5);
 }
 
 /* Contact Info Grid */
@@ -154,18 +163,21 @@
 }
 
 .contact-info-card {
-    background: #f8f9fa;
+    background: #f8fafc;
     padding: 30px;
     border-radius: 12px;
     text-align: center;
-    border-left: 4px solid #2196F3;
+    border-left: 4px solid #f59e0b;
     transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
 .contact-info-card:hover {
-    background: #e3f2fd;
+    background: #fff7ed;
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(33, 150, 243, 0.15);
+    box-shadow: 0 15px 35px rgba(245, 158, 11, 0.15);
+    border-left: 4px solid #d97706;
 }
 
 .contact-icon {
@@ -174,14 +186,14 @@
 }
 
 .contact-info-card h3 {
-    color: #333;
+    color: #0f172a;
     font-size: 1.4em;
     margin: 0 0 15px 0;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .contact-info-card p {
-    color: #666;
+    color: #334155;
     font-size: 1em;
     line-height: 1.6;
     margin: 0 0 10px 0;
@@ -196,27 +208,31 @@
 }
 
 .faq-item {
-    background: #f8f9fa;
+    background: #f8fafc;
     padding: 25px;
     border-radius: 12px;
-    border-left: 4px solid #2196F3;
+    border-left: 4px solid #f59e0b;
     transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
 .faq-item:hover {
-    background: #e3f2fd;
+    background: #fff7ed;
     transform: translateX(5px);
+    border-left: 4px solid #d97706;
+    box-shadow: 0 15px 35px rgba(245, 158, 11, 0.15);
 }
 
 .faq-item h4 {
-    color: #333;
+    color: #0f172a;
     font-size: 1.2em;
     margin: 0 0 15px 0;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .faq-item p {
-    color: #666;
+    color: #334155;
     font-size: 1em;
     line-height: 1.6;
     margin: 0;
@@ -225,8 +241,8 @@
 /* CTA Section */
 .cta-section {
     text-align: center;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
-    border: 2px solid #2196F3;
+    background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%);
+    border: 2px solid #f59e0b;
 }
 
 .contact-buttons {
@@ -240,37 +256,39 @@
 .cta-button {
     padding: 15px 30px;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: inherit;
     min-width: 150px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .cta-button.primary {
-    background-color: #2196F3;
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
     color: white;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
 }
 
 .cta-button.primary:hover {
-    background-color: #1976D2;
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(33, 150, 243, 0.4);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.5);
 }
 
 .cta-button.secondary {
-    background-color: transparent;
-    color: #2196F3;
-    border: 2px solid #2196F3;
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);
 }
 
 .cta-button.secondary:hover {
-    background-color: #2196F3;
-    color: white;
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(33, 150, 243, 0.4);
+    box-shadow: 0 8px 25px rgba(14, 165, 233, 0.5);
 }
 
 /* Responsive Design */
